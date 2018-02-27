@@ -1,0 +1,24 @@
+﻿; Registers the language grammar files with Visual Studio
+[$RootKey$\TextMate\Repositories]
+"Ruby"="$PackageFolder$\Grammars"
+
+; Associate icons with file extensions in Solution Explorer
+; Find more icons at http://glyphlist.azurewebsites.net/knownmonikers/
+[$RootKey$\ShellFileAssociations\.rb]
+"DefaultIconMoniker"="KnownMonikers.RBFileNode"
+[$RootKey$\ShellFileAssociations\.rbx]
+"DefaultIconMoniker"="KnownMonikers.RBFileNode"
+[$RootKey$\ShellFileAssociations\.rjx]
+"DefaultIconMoniker"="KnownMonikers.RBFileNode"
+[$RootKey$\ShellFileAssociations\.gemspec]
+"DefaultIconMoniker"="KnownMonikers.RBFileNode"
+[$RootKey$\ShellFileAssociations\.irbrc]
+"DefaultIconMoniker"="KnownMonikers.RBFileNode"
+[$RootKey$\ShellFileAssociations\.capfile]
+"DefaultIconMoniker"="KnownMonikers.RBFileNode"
+[$RootKey$\ShellFileAssociations\.ru]
+"DefaultIconMoniker"="KnownMonikers.RBFileNode"
+[$RootKey$\ShellFileAssociations\.reek]
+"DefaultIconMoniker"="KnownMonikers.RBFileNode"
+[$RootKey$\ShellFileAssociations\.prawn]
+"DefaultIconMoniker"="KnownMonikers.RBFileNode"
