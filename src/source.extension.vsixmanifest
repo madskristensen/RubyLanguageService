@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="d22f75b7-b3b2-4540-a944-c6250a977876" Version="1.0" Language="en-US" Publisher="Mads Kristensen" />
         <DisplayName>Ruby Language Service</DisplayName>
-        <Description xml:space="preserve">Empty VSIX Project.</Description>
+        <Description xml:space="preserve">Provides basic editor features for working with the Ruby programming language</Description>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
         <Tags>ruby, rails, rb</Tags>
