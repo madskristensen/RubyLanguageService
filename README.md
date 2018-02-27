@@ -4,5 +4,5 @@
 
 This adds Ruby language support to Visual Studio 2017 Update 6.
 
-![Ruby](src/resources/icon.png)
+![Ruby](src/Resources/Icon.png)
 
