@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+
+  <Commands package="guidSampleWindowCommandPackage">
+    <Buttons>
+      <Button guid="guidSampleWindowCommandPackageCmdSet" id="SampleWindowCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>
+        <Icon guid="ImageCatalogGuid" id="RBProjectNode"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Ruby Language Reference</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <!-- This is the package guid. -->
+    <GuidSymbol name="guidSampleWindowCommandPackage" value="{ff4f80de-da63-4ca8-9f09-acf70fdc5cb5}" />
+
+    <!-- This is the guid used to group the menu commands together -->
+    <GuidSymbol name="guidSampleWindowCommandPackageCmdSet" value="{35933dd5-e131-401e-8b2c-17338f1b804c}">
+      <IDSymbol name="SampleWindowCommandId" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

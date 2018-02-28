@@ -18,7 +18,6 @@ namespace RubyLanguageService.Commands
     public class CommentUncommentCommand : ICommandHandler<CommentSelectionCommandArgs>, ICommandHandler<UncommentSelectionCommandArgs>
     {
         public string DisplayName => "Comment/Uncomment selection";
-        private const string _symbol = "#";
 
         public bool ExecuteCommand(CommentSelectionCommandArgs args, CommandExecutionContext executionContext)
         {
@@ -57,7 +56,7 @@ namespace RubyLanguageService.Commands
         {
             foreach (string line in lines)
             {
-                sb.AppendLine(_symbol + line);
+                sb.AppendLine(Constants.CommentChars + line);
             }
         }
 
@@ -65,9 +64,9 @@ namespace RubyLanguageService.Commands
         {
             foreach (string line in lines)
             {
-                if (line.StartsWith(_symbol, StringComparison.Ordinal))
+                if (line.StartsWith(Constants.CommentChars, StringComparison.Ordinal))
                 {
-                    sb.AppendLine(line.Substring(_symbol.Length));
+                    sb.AppendLine(line.Substring(Constants.CommentChars.Length));
                 }
                 else
                 {

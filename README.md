@@ -10,3 +10,4 @@ This adds Ruby language support to Visual Studio 2017 Update 6.
 
 - Syntax highlighting
 - Comment/uncomment commands
+- Ruby language reference window
