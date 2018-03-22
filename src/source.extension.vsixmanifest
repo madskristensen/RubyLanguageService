@@ -6,7 +6,7 @@
         <Description xml:space="preserve">Provides basic editor features for working with the Ruby programming language</Description>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
-        <Tags>ruby, rails, rb</Tags>
+        <Tags>ruby, rails, rb, gemfile</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.27205, 16.0)" />

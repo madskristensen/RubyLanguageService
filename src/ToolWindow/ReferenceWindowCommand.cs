@@ -16,11 +16,11 @@ namespace RubyLanguageService
             var commandService = (IMenuCommandService)await package.GetServiceAsync(typeof(IMenuCommandService));
 
             var menuCommandID = new CommandID(CommandSet, CommandId);
-            var menuItem = new MenuCommand((sender, e) => ShowToolWindow(package, sender, e), menuCommandID);
+            var menuItem = new MenuCommand((sender, e) => Execute(package, sender, e), menuCommandID);
             commandService.AddCommand(menuItem);
         }
 
-        private static void ShowToolWindow(AsyncPackage package, object sender, EventArgs e)
+        private static void Execute(AsyncPackage package, object sender, EventArgs e)
         {
             package.JoinableTaskFactory.RunAsync(async () =>
             {
